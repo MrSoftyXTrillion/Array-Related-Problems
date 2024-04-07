@@ -1,17 +1,19 @@
 #include<stdio.h>
-int main() {
-    int n;
-    scanf("%d", &n);
-    int a[n];
-    for (int i = 0; i < n; i++)
+int main ()
+{
+    int i,n,p;
+    scanf ("%d",&n);
+    int arr[n];
+    for (i=0;i<n;i++)
     {
-        scanf("%d", &a[i]);
+        scanf ("%d",&arr[i]);
     }
-    for (int i = 0; i < n; i++)
+    scanf ("%d",&p);
+    for (i=0;i<n;i++)
     {
-        if (a[i] <= 10)
+        if (p==arr[i])
         {
-            printf("A[%d] = %d\n", i, a[i]);
+            printf ("Entered value is %d and its position is %d\n",p,i+1);
         }
     }
     return 0;
