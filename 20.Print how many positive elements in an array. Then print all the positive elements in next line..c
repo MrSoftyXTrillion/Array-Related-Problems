@@ -13,8 +13,8 @@ int main ()
         if (arr[i]>0)
         {
             count++;
-        }
-        printf ("%d ",arr[i]);
+            printf ("%d ",arr[i]);
+        } 
     }
     printf ("\n");
     printf ("%d\n",count);
